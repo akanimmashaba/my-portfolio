@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  django-portfolio:
+    build: .
+    container_name: portfolio
+    ports:
+      - "8000:8000"
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    depends_on:
+      - portfolioDB
+    # networks:
+    #   - default-server-network
+
+  portfolioDB:
+    image: postgres:13
+    container_name: portfolio_postgresdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
+    # networks:
+    #   - default-server-network
+
+volumes:
+  postgres_data:
+
+# networks:
+#   external_network:
+#     external: true
