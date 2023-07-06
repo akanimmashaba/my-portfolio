@@ -1,107 +1,40 @@
 {% extends "_base.html" %}
-{% load compress %}
 {% load static %}
 
 
 {% block content %}
 <div class="mx-auto max-w-7xl ">
- <!-- landing 
-  [
-    image and text, buttons, links
 
-  ]
-  [
-
-
-  ]
--->
-
-<div class="grid grid-cols-3 gap-2">
-  <div class="col-span-full md:col-span-1 bg-gray-100 h-[60vh] ">
-    <img class="h-full w-full rouned-none object-cover" src="https://images.unsplash.com/photo-1659835347242-97835d671db7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80" alt="" srcset="">
-  </div>
-  <div class="col-span-full md:col-span-2 h-auto">
-    <div class="px-4 py-2 grid grid-cols-1">
-    <div>
-        I am a software developer with experience in web development using the MERN stack (MongoDB, ExpressJS, Reactjs/NextJs, Nodejs
-        ) as well as mobile app development for iOS and Android platforms using Flutter framework. My goal is to build scalable applications that are secure, fast
-        and easy maintainability.
+  <div class="mt-16 md:mt-20 px-2 sm:px-6 lg:px-8">
+    <div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div class="group relative">
+        <div class="aspect-h-2 md:aspect-h-2 aspect-w-2 w-full overflow-hidden rounded-md lg:h-36">
+          <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="my image" class="h-full w-full object-cover object-center lg:h-full lg:w-full">
+        </div>
       </div>
-      <div class="pt-16 ">
-        lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quibusdam voluptatum doloremque nobis delectus!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugit repellendus atque cumque pariatur iure exp
-      </div>
-      <div class="pt-16 flex justify-center">
-        tech stack
-      </div>
-    </div>
-  </div>
+
+      <div class="shadow-sm px-4 py-6 rounded-md flex flex-col justify-center gap-y-4 place-content-center text-center ">
+        
+        <div class=" text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl lg:text-4xl dark:text-white">We invest in the world’s potential</div>
+<div class="text-xl font-normal text-gray-500">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</div>
+<div class="flex gap-2 flex-wrap justify-center">
+  <div href="#" class="inline-flex items-center justify-center px-3 py-2 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+    linkedin
+</div>
+<div href="#" class="inline-flex items-center justify-center px-3 py-2 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+  Facebook
+</div>
+<div href="#" class="inline-flex items-center justify-center px-3 py-2 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+  Github
+</div>
 </div>
 
-
-<div class="mt-4 ">
-  <div class=" ">
-    latest project-list
-    <div class="grid grid-cols-4 md:grid-cols-3 lg:grid-cols-4">
-      
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <div class="">
-          <div class="">
-            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1659835347242-97835d671db7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80" alt="Modern building architecture">
-          </div>
-          <div class="p-8">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
-            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a>
-            <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
-          </div>
-        </div>
       </div>
-
-     
-      
-      
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <div class="">
-          <div class="">
-            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1659835347242-97835d671db7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80" alt="Modern building architecture">
-          </div>
-          <div class="p-8">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
-            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a>
-            <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
-          </div>
-        </div>
-      </div>   <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <div class="">
-          <div class="">
-            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1659835347242-97835d671db7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80" alt="Modern building architecture">
-          </div>
-          <div class="p-8">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
-            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a>
-            <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
-          </div>
-        </div>
-      </div>   <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <div class="">
-          <div class="">
-            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1659835347242-97835d671db7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80" alt="Modern building architecture">
-          </div>
-          <div class="p-8">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
-            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a>
-            <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
-          </div>
-        </div>
-      </div>
-      
-
-
-    
-    </div>
   </div>
 
-</div>
+
+
+
 
  <!-- contact -->
  <!-- footer
